@@ -140,16 +140,72 @@ section h2 {
   color: #2c3e50;
 }
 
+/* About Section */
 #about {
   background: #f8f9fa;
 }
 
-#about p {
-  max-width: 800px;
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
   text-align: center;
   font-size: 1.1rem;
   line-height: 1.8;
+}
+
+.about-image {
+  flex-shrink: 0;
+}
+
+.about-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #2c3e50;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Tablet and Desktop - Image on the right */
+@media screen and (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .about-text p {
+    text-align: left;
+  }
+
+  .about-image {
+    order: 2;
+  }
+
+  .about-text {
+    order: 1;
+  }
+
+  .about-image img {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 /* Skills Section - Flexbox */
