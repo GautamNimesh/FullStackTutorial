@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Hero Section with Video Background -->
+  <header id="hero">
+    <video autoplay loop muted id="video-background">
+      <source src="background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <nav class="navbar">
+      <span class="logo">My Portfolio</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+        ☰
+      </button>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Nimesh Gautam</h1>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm a passionate frontend developer with expertise in HTML5, CSS3, and JavaScript. 
+      I love creating beautiful, responsive, and user-friendly web experiences. With a strong 
+      foundation in modern web technologies and a keen eye for design, I transform ideas into 
+      reality through clean and efficient code.
+    </p>
+  </section>
+
+  <!-- Skills Section - Flexbox -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item">HTML5</div>
+      <div class="skill-item">CSS3</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">Flexbox</div>
+      <div class="skill-item">CSS Grid</div>
+      <div class="skill-item">Responsive Design</div>
+      <div class="skill-item">Git</div>
+      <div class="skill-item">UI/UX</div>
+    </div>
+  </section>
+
+  <!-- Projects Section - Grid -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div id="projects-grid">
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>A responsive landing page built with HTML5, CSS3 Flexbox, and modern design principles.</p>
+      </div>
+      <div class="project-card">
+        <h3>Escape Room - Game</h3>
+        <p>Interactive Game made using Unity and C sharp.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio</h3>
+        <p>Portfolio website showcasing HTML5 media integration with video and audio elements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form-id">
+      <div class="form-group">
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+      <div id="form-message"></div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 My Portfolio – Built with HTML5, CSS3 & JavaScript
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
